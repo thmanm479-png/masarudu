@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  DATABASE_URL = "postgresql://postgres:Admin%40Masar2024@db.triwrtqolnqkfempwlqz.supabase.co:5432/postgres"
+  DIRECT_URL = "postgresql://postgres:Admin%40Masar2024@db.triwrtqolnqkfempwlqz.supabase.co:5432/postgres?pgbouncer=true"
+  JWT_SECRET = "masar-osman-admin-secret-key-2024"
+  NEXT_PUBLIC_SUPABASE_URL = "https://triwrtqolnqkfempwlqz.supabase.co"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRyaXdydHFvbG5xa2ZlbXB3bHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAxMzY2ODIsImV4cCI6MjA4NTcxMjY4Mn0._2XlkKrG09QiIzoi1OGTfyjR9Hk4Geoy75HPK2LtOic"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
